@@ -1,7 +1,6 @@
 ![HOTSTAR IPL AD Muter](chrome/128.png?raw=true) 
 # Hotstar Ad Muter
-
-This tiny browser extension auto mutes certain ads in live sport streams on Hotstar like IPL by intercepting Hotstar's ad tracking pixels. It also dynamically determines how long to mute by guessing the duration of the ad from the ad identifier.
+ It also dynamically determines how long to mute by guessing the duration of the ad from the ad identifier.
 
 Provides respite to your ears by muting the following ads out of the box: **Parle Marie, Vimal Elaichi, Kamla Pasand, My11 Circle, Poker Baazi, Policy Bazaar**.
 
@@ -29,22 +28,13 @@ Note: I made this browser add-on for personal use and may add or remove ads to m
 
 Note: For other Chromium-based browsers like **Microsoft Edge** or **Brave**, follow the same steps. Just change the url to `edge://extensions/` or `brave://extensions/`
 
-## Mozilla Firefox installation
-1. **Open Firefox**, and go to `about:debugging` 
-2. Click **This Firefox**
-3. Click **Load Temporary Add-on**
-4. Select `manifest.json` file inside `hotstar-ipl-ad-mute/firefox` folder
-5. Enjoy muted ads during live sport streams!
-
-Note: The extension installs and remains installed until you remove it or restart Firefox.
-
 ---
 
 ## Customize
 
 
 ### Mute all Ads 
-You can set the `MUTE_ALL_ADS` variable in `background.js` to `true` to mute all the ads.
+You can set the `MUTE_ALL_ADS` variable in `background.js` to `false` to disable the mute all the ads and then select particular ads to mute only.
 
 ### Mute by AD IDs
 You can customize which ads are muted by modifying the `targetAdIds` array in `background.js`.  
@@ -75,6 +65,10 @@ Alternatively, you can also open your browser dev tools and look for URLs that b
 - Sometimes broadcasters try to squeeze in one more ad before the next over begins. If the ad gets cut short abruptly, the live action may stay muted for a few extra seconds before the extension unmutes the tab
 - This extension may break if Hotstar change their current tracking pixel URLs or change the format or keywords used in their ad identifiers
 
-## License
+## Credit
 
-MIT © 2025
+**Credits & Acknowledgments**
+
+This project is a modified version of the original Chrome extension created by **[pea1bee](https://github.com/pea1bee)**. I would like to extend my sincere thanks to him for developing the **[hotstar-ipl-ad-mute](https://github.com/pea1bee/hotstar-ipl-ad-mute)** base code and making it available to the community. 
+
+While I have made some personal changes and updates to this version, the core functionality and original concept belong entirely to him. Please visit his GitHub repository to see the original work and support his projects.
