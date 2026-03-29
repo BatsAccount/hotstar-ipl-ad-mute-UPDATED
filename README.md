@@ -1,5 +1,5 @@
 ![HOTSTAR IPL AD Muter](chrome/128.png?raw=true) 
-# Hotstar Ad Muter
+# A) Hotstar Ad Muter
  It also dynamically determines how long to mute by guessing the duration of the ad from the ad identifier.
 
 Provides respite to your ears by muting the following ads out of the box: **Parle Marie, Vimal Elaichi, Kamla Pasand, My11 Circle, Poker Baazi, Policy Bazaar**.
@@ -8,7 +8,7 @@ Note: I made this browser add-on for personal use and may add or remove ads to m
 
 ---
 
-## Installation 
+## B) Installation 
 
  **Clone** this repository to your computer 
 
@@ -18,7 +18,7 @@ Note: I made this browser add-on for personal use and may add or remove ads to m
    
    (alternatively, you can download the zip here: https://github.com/pea1bee/hotstar-ipl-ad-mute/archive/refs/heads/main.zip)
 
-## Google Chrome installation
+## H) Google Chrome installation
 
 1. **Open Chrome**, and go to `chrome://extensions/`
 2. **Enable Developer Mode** in the top-right corner (if not already enabled)
@@ -30,7 +30,7 @@ Note: For other Chromium-based browsers like **Microsoft Edge** or **Brave**, fo
 
 ---
 
-## Customize
+## I) Customize
 
 
 ### Mute all Ads 
@@ -46,7 +46,7 @@ const targetAdIds = [
   "KAMLA_PASAND",
   "DREAM11",
   // Add your own here
-];
+# ];
 ```
 
 ### Steps to find ad identifiers (Google Chrome):
